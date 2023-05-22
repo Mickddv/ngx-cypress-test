@@ -70,7 +70,7 @@ describe('First test suite', () => {
 
     })
 
-    it('Then and wrap methods', () => {
+    it.only('Then and wrap methods', () => {
 
         cy.visit('/')
         cy.contains('Forms').click()
