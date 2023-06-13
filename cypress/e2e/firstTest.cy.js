@@ -70,7 +70,7 @@ describe('First test suite', () => {
 
     })
 
-    it.only('Then and wrap methods', () => {
+    it('Then and wrap methods', () => {
 
         cy.visit('/')
         cy.contains('Forms').click()
@@ -100,6 +100,13 @@ describe('First test suite', () => {
             })
 
         })
+    })
+
+    it.only('invoke command', () => {
+        cy.visit('/')
+        cy.contains('Forms').click()
+        cy.contains('Form Layouts').click()
+
     })
 
 });
